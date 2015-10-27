@@ -13,14 +13,18 @@
     "example": "examples"
   },
   "scripts": {
-    "test": "echo 'lol'",
-    "start": "rackt server"
+    "test": "npm run lint && echo 'lol'",
+    "start": "rackt server",
+    "lint": "eslint ."
   },
   "authors": [
     "Ryan Florence <rpflorence@gmail.com>"
   ],
   "license": "MIT",
   "devDependencies": {
+    "babel-eslint": "^4.1.3",
+    "eslint": "^1.7.3",
+    "eslint-config-rackt": "^1.1.1",
     "rackt-cli": "^0.4.0",
     "react": "^0.13.3"
   },
